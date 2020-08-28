@@ -1308,8 +1308,8 @@ textarea:focus {
   }
   .second-title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.178;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
@@ -2166,28 +2166,32 @@ textarea:focus {
     margin-bottom: 20px;
   }
   .sign-up {
-    max-width: 450px;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .imput-footer {
+    width: 100%;
     align-items: center;
     justify-content: center;
   }
   .imput {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    width: 380px;
+    align-items: center;
+    width: 100%;
   }
   .imput .footer-actions-input-text-emaile {
-    width: 100%;
+    width: calc((100% - 30px) / 1);
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     background: #2f303a;
-    margin-right: 12px;
     padding: 10px;
     color: rgba(255, 255, 255, 0.6);
     cursor: pointer;
