@@ -200,23 +200,25 @@
 /*опис лого*/
 .menu-wrapper {
   display: flex;
-  
+  justify-content: center;
+  align-items: center;
 }
 .header-logo {
     font-family: $secondary-font;
+    display: flex;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.167;
     letter-spacing: 0.03em;
     color: #000000;
-    margin-right: 85px;
+    margin-right: 75px;
     &:hover,
     &:focus {
     color: $accent-color;
   }
   }
   .header-navigation {
-    width: 1200px;
+    width: 768px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -306,6 +308,7 @@
 .navigation {
   display: flex;
   align-items:baseline;
+  margin-right: 75px;
 }
 
 
@@ -313,7 +316,17 @@
 .address-util,
 .address-list {
   display: flex;
-  align-items: center;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.address-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.address-item:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .navigation-list-item:not(:last-child) {
@@ -324,9 +337,6 @@
   align-items: center;
   svg {
     margin-right: 10px;
-  }
-  &:not(:last-child) {
-    margin-right: 30px;
   }
   
 }
